@@ -33,6 +33,7 @@ public class Question {
         System.out.println(calculator.getTotal(itemsListC));
 
         //顾客D
+        //设置满减
         calculator.setEnablefullreduction(100,10);
         List<Items> itemsListD  = new ArrayList<>();
         itemsListD.add(new Items(apple,0,1));
@@ -44,6 +45,7 @@ public class Question {
     }
 
     public static class Fruit{
+//        水果名称
         private String name;
 //        价格
         private Double price;
@@ -116,11 +118,11 @@ public class Question {
     }
 
     public static class Calculator{
-
+//      满多少
         private double full;
-
+//      减多少
         private double reduction;
-
+//      是否有满减
         private Boolean enablefullreduction;
 
         public Calculator(){
